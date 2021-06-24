@@ -14,7 +14,7 @@ function getNLUInstance() {
     const naturalLanguageUnderstanding = new NaturalLanguageUnderstandingV1( {
         version: '2020-08-01',
         authenticator: new IamAuthenticator( {
-            apikey: api_ke,
+            apikey: api_key,
         } ),
         serviceUrl: api_url,
     } );
