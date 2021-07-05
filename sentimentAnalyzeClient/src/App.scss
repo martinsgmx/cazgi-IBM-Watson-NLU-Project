@@ -1,0 +1,44 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+// palette colors official taken from:
+//   https://www.ibm.com/brand/systems/developer/brand/color/
+
+// custom variables
+$primary: #000000;
+$auxiliary: #012749;
+$secondary: #00539A;
+$danger: #a2191f;
+
+// custom theme
+$theme-colors: (
+				"primary": $primary,
+				"danger": $danger
+);
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+h2 {
+		font-size: 5rem;
+}
+
+.navbar {
+		background-image: linear-gradient(to left, $primary, $auxiliary);
+}
+
+.logo-img {
+		max-height: 35px;
+}
+
+.container {
+		min-height: 80vh;
+		max-width: 90%;
+		padding: 25px 0 0 0;
+}
+
+.sample-text {
+		&:hover {
+				opacity: .5;
+		}
+}
